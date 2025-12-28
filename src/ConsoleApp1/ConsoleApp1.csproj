@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+        <!-- 出力先の基準を root/bin/ に変更 -->
+        <BaseOutputPath>$(SolutionDir)bin\</BaseOutputPath>
+
+        <!-- プロジェクト名を最後に -->
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        
+        <FileVersion>1.0.0.1</FileVersion>
+        <Product>TestSystems</Product>
+        <Company>TestCompany</Company>
+        <Authors>TestAuthors</Authors>
+        <Copyright>TestCompany©</Copyright>
+    </PropertyGroup>
+
+    <!-- Debug -->
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <OutputPath>$(SolutionDir)bin\Debug\$(AssemblyName)\</OutputPath>
+    </PropertyGroup>
+
+    <!-- Release -->
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <OutputPath>$(SolutionDir)bin\-Release\$(AssemblyName)\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="NLog" Version="6.0.7" />
+        <PackageReference Include="NLog.Extensions.Logging" Version="6.1.0" />
+        <PackageReference Include="NLog.Web.AspNetCore" Version="6.1.0" />
+    </ItemGroup>
+</Project>

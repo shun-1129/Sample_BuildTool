@@ -1,4 +1,4 @@
-﻿namespace BuildTool.Models.Data
+﻿namespace ConsoleBuildTool.Models.Data
 {
     public class Appsettings
     {

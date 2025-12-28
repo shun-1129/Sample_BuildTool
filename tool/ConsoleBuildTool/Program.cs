@@ -1,7 +1,7 @@
-﻿using BuildTool.Logics;
-using BuildTool.Models.Data;
+﻿using ConsoleBuildTool.Logics;
+using ConsoleBuildTool.Models.Data;
 
-namespace BuildTool
+namespace ConsoleBuildTool
 {
     public class Program
     {
