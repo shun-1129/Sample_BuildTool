@@ -1,7 +1,7 @@
-﻿using BuildTool.Models.Data;
+﻿using ConsoleBuildTool.Models.Data;
 using System.Diagnostics;
 
-namespace BuildTool.Logics
+namespace ConsoleBuildTool.Logics
 {
     public class ApplicationBuild
     {
